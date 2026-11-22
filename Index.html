@@ -1,0 +1,23 @@
+"Shubham Coaching Classes" ke liye ek mobile-first WEB APP ka UI design banao. Ye browser me chalne wala responsive web app hona chahiye (phone pe pehle, desktop pe bhi theek dikhe). Abhi koi real data ya backend nahi, sirf sample/dummy data.
+
+Design rules:
+- Dark theme (background #0f1115, cards #1a1d24, accent amber #ffb020)
+- Bade tappable buttons (min height 56px), bada text (min 16px)
+- Rounded corners, simple clean look, ek haath se use karne layak
+- Layout 360-480px width ke liye optimize karo, badi screen pe center me dikhao
+- Bottom navigation bar (login ko chhodkar)
+- Text Hinglish me (jaise "Fees jama karo", "Hazri save karo")
+- Single HTML file, HTML + CSS + vanilla JS, koi external library nahi
+- Screens ke beech navigation hash routing se ho
+
+5 screens:
+1. Login: logo, mobile number, password, "Login karein" button, "Owner login" button
+2. Home: greeting, 2 stat cards (aaj ki hazri, baki fees), bade tiles: Fees, Attendance, Owner Panel, Logout
+3. Fees: jama/baki summary, filter chips (Sab/Baki/Jama), students ki list status chip ke saath, "Fees jama karo" button.
+   SMS reminder: har "Baki" student ke saath chhota "SMS bhejo" button, aur neeche bada "Sabko reminder bhejo" button. Dabane par confirm popup aaye ("5 students ko SMS bhejein?") aur phir "SMS bhej diya ✓" ka message dikhe.
+4. Attendance: batch chips (Class 9/10/12), har student ke saath bade P/A toggle buttons, "Hazri save karo" button.
+   SMS reminder: Absent student ke liye "Parent ko SMS bhejo" option.
+5. Owner Panel: 4 stat cards (total students, batches, kamai, baki fees) aur buttons: Naya student jodein, Batch banayein, Report dekhein, Settings.
+   SMS Settings section: reminder message ka template edit karne ka box (jaise "Namaste, {student} ki ₹{amount} fees baki hai. - Shubham Coaching Classes"), auto-reminder ON/OFF toggle, aur reminder ka din chunne ka option (har mahine ki 1, 5 ya 10 tareekh).
+
+Abhi SMS sirf design/demo ho (button dabane par sirf confirmation dikhe, asli SMS na jaye). Code aise likho ki baad me real SMS service (jaise Fast2SMS ya Twilio) aur real data aasani se jod sakein, aur SMS bhejne ka function alag rakho.
